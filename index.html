@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>🌦️ Weather App</h1>
+
+        <form id="weatherForm">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Masukkan nama kota"
+                required
+            >
+
+            <button type="submit">Cari</button>
+        </form>
+
+        <div class="unit-toggle">
+    <button type="button" id="unitToggle">°C / °F</button>
+</div>
+
+        <p id="loading"></p>
+        <p id="error"></p>
+        <div id="weatherWarning"></div>
+
+        <section id="weatherResult">
+    <div class="weather-header">
+        <h2 id="cityName"></h2>
+        <p id="weatherDate"></p>
+    </div>
+
+    <div class="weather-main">
+        <img id="weatherIcon" src="" alt="Ikon cuaca">
+        <div>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+    </div>
+
+    <div class="weather-info">
+    <div class="info-card">
+        <span>💧</span>
+        <p>Kelembapan</p>
+        <strong id="humidity"></strong>
+    </div>
+
+    <div class="info-card">
+        <span>🌬️</span>
+        <p>Kecepatan Angin</p>
+        <strong id="windSpeed"></strong>
+    </div>
+
+    <div class="info-card">
+        <span>📊</span>
+        <p>Tekanan Udara</p>
+        <strong id="pressure"></strong>
+    </div>
+</div>
+</section>
+
+<section id="historySection">
+    <h3>Riwayat Pencarian</h3>
+    <ul id="historyList"></ul>
+
+    <button type="button" id="clearHistory">Hapus Riwayat</button>
+</section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
