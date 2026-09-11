@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
@@ -30,7 +29,6 @@ main {
 }
 
 h1 {
-
     margin-bottom: 5px;
     font-size: 36px;
     font-weight: 700;
@@ -129,8 +127,8 @@ button:active {
     font-size: 14px;
     font-weight: 600;
 }
+
 #weatherResult {
-    
     margin-top: 30px;
     padding: 28px;
     border-radius: 24px;
@@ -138,7 +136,6 @@ button:active {
     border: 1px solid #e1ecf8;
     box-shadow: 0 12px 30px rgba(79, 172, 254, 0.12);
 }
-
 
 .weather-header {
     margin-bottom: 20px;
@@ -250,8 +247,8 @@ button:active {
     }
 
     .weather-info {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 
     .weather-main img {
         width: 115px;
@@ -265,13 +262,6 @@ button:active {
     #historySection {
         padding: 18px 12px;
     }
-}
-#historySection {
-    margin-top: 25px;
-    padding: 20px;
-    background: #82438b;
-    border-radius: 18px;
-    border: 1px solid #c081bc;
 }
 
 #historySection {
@@ -306,6 +296,7 @@ button:active {
     background: #84b5f6;
     transform: translateY(-2px);
 }
+
 #clearHistory {
     margin-top: 15px;
     padding: 10px 18px;
